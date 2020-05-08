@@ -2709,6 +2709,11 @@ fieldset:disabled a.btn {
     background-color: #25d366;
     border-color: #25d366;
 }
+.btn-facebook-messenger {
+    color: #fff;
+    background-color: #0078ff;
+    border-color: #0078ff;
+}
 .btn-dark:hover {
     color: #fff;
     background-color: #23272b;
