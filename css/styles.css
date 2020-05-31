@@ -46,6 +46,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -10046,7 +10047,7 @@ img::-moz-selection {
 }
 
 .btn-xl {
-  padding: 1.25rem 2.5rem;
+  padding: 1.25rem 2.7rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   font-weight: 700;
@@ -10470,27 +10471,33 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 section#contact .section-heading {
   color: #fff;
 }
+
 section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
+
 section#contact form#contactForm .form-group input,
 section#contact form#contactForm .form-group textarea {
   padding: 1.25rem;
 }
+
 section#contact form#contactForm .form-group input.form-control {
+  height: 4.6rem;
+}
+
+section#contact form#contactForm .form-group-textarea {
   height: auto;
 }
-section#contact form#contactForm .form-group-textarea {
-  height: 100%;
-}
+
 section#contact form#contactForm .form-group-textarea textarea {
-  height: 100%;
-  min-height: 10rem;
+  height: 10%;
+  min-height: 10.5rem;
 }
-section#contact form#contactForm p.help-block {
+section #contact form#contactForm p.help-block {
   margin: 0;
 }
 section#contact form#contactForm .form-control:focus {
