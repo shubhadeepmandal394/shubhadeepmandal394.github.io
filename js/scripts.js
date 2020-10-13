@@ -1,9 +1,7 @@
 /* Copyright Shubhadeep Mandal 2020
 */
 (function ($) {
-    "use strict"; // Start of use strict
-
-    // Smooth scrolling using jQuery easing
+    "use strict";
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
@@ -27,18 +25,15 @@
         }
     });
 
-    // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
         target: "#mainNav",
         offset: 74,
     });
 
-    // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
@@ -46,8 +41,48 @@
             $("#mainNav").removeClass("navbar-shrink");
         }
     };
-    // Collapse now if page is not at top
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+var _CONTENT = ["Shubhadeep Mandal", "a developer", "a programmer", "a freelancer"];
+var _PART = 0;
+var _PART_INDEX = 0;
+var _INTERVAL_VAL;
+var _ELEMENT = document.querySelector("#cursortext");
+
+function Type() {
+	var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+
+	if (text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function () {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+function Delete() {
+	var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	if (text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		if (_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		setTimeout(function () {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+_INTERVAL_VAL = setInterval(Type, 100);
