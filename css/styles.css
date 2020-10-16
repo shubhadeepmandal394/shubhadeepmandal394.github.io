@@ -1,7 +1,8 @@
-﻿@charset "UTF-8";
-/*!
+﻿/*
 * Copyright Shubhadeep Mandal 2020
- */
+*/
+
+@charset "UTF-8";
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -73,6 +74,11 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+}
+
+#main_container {
+  margin: 0 auto;
+  text-align: left;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2881,56 +2887,7 @@ fieldset:disabled a.btn {
   background-color: #343a40;
   border-color: #343a40;
 }
-.btn-facebook {
-  color: #fff;
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-.btn-twitter {
-  color: #fff;
-  background-color: #00acee;
-  border-color: #00acee;
-}
-.btn-linkedin {
-  color: #fff;
-  background-color: #0e76a8;
-  border-color: #0e76a8;
-}
-.btn-github {
-  color: #fff;
-  background-color: #211f1f;
-  border-color: #211f1f;
-}
-.btn-instagram {
-  color: #fff;
-  background-color: #fb3958;
-  border-color: #fb3958;
-}
-.btn-discord {
-  color: #fff;
-  background-color: #738adb;
-  border-color: #738adb;
-}
-.btn-skype {
-  color: #fff;
-  background-color: #00aff0;
-  border-color: #00aff0;
-}
-.btn-google {
-  color: #fff;
-  background-color: #db3236;
-  border-color: #db3236;
-}
-.btn-whatsapp {
-  color: #fff;
-  background-color: #25d366;
-  border-color: #25d366;
-}
-.btn-facebook-messenger {
-  color: #fff;
-  background-color: #0078ff;
-  border-color: #0078ff;
-}
+
 .btn-dark:hover {
   color: #fff;
   background-color: #23272b;
@@ -10566,8 +10523,8 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
+  /*text-align: center;*/
+  color: #000;
   background-image: url("../assets/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10575,6 +10532,7 @@ header.masthead {
   background-size: cover;
 }
 header.masthead .masthead-subheading {
+  color: #fff;
   font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5rem;

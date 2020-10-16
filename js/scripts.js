@@ -1,5 +1,7 @@
-/* Copyright Shubhadeep Mandal 2020
+/* 
+* Copyright Shubhadeep Mandal 2020
 */
+
 (function ($) {
     "use strict";
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -45,7 +47,7 @@
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
-var _CONTENT = ["Shubhadeep Mandal", "a developer", "a programmer", "a freelancer"];
+var _CONTENT = ["Shubhadeep Mandal", "a developer", "a programmer", "an ethical hacker"];
 var _PART = 0;
 var _PART_INDEX = 0;
 var _INTERVAL_VAL;

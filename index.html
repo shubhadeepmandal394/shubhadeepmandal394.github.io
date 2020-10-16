@@ -1,5 +1,7 @@
+<!-- Copyright Shubhadeep Mandal 2020 -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8" />
@@ -8,8 +10,11 @@
     <meta name="author" content="" />
     <title>Shubhadeep Mandal</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Icon themes -->
+    <link href="css/icon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Font Awesome icons (free version)
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>-->
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
@@ -19,6 +24,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body id="page-top">
@@ -69,19 +75,44 @@
     <header class="masthead">
         <div class="container">
             <div class="masthead-subheading">Welcome To My Website!</div>
+            <!-- <div class="masthead-heading text-uppercase">I'm Shubhadeep Mandal</div>-->
             <div class="masthead-heading text-uppercase" id="cursorcontainer">
                 <div id="cursorcolor">I'm <div id="cursortext"></div>
                 </div>
             </div>
-            <a class="btn btn-twitter btn-social mx-2" href="https://twitter.com/ImShubhadeep394" target="_blank"><i
-                    class="fab fa-twitter"></i></a><a class="btn btn-facebook btn-social mx-2"
-                href="https://www.facebook.com/shubhadeepmandal394" target="_blank"><i
-                    class="fab fa-facebook-f"></i></a><a class="btn btn-linkedin btn-social mx-2"
-                href="https://www.linkedin.com/in/shubhadeepmandal394/" target="_blank"><i
-                    class="fab fa-linkedin-in"></i></a><a class="btn btn-github btn-social mx-2"
-                href="https://github.com/shubhadeepmandal394" target="_blank"><i class="fab fa-github"></i></a><a
-                class="btn btn-instagram btn-social mx-2" href="https://www.instagram.com/imshubhadeep394/"
-                target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="wrapper ">
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i></div>
+                    <a href="https://www.facebook.com/shubhadeepmandal394" style="text-decoration: none" target="
+                        _blank"><span>Facebook</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <a href="https://twitter.com/ImShubhadeep394" style="text-decoration: none"
+                        target="_blank"><span>Twitter</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i></div>
+                    <a href="https://www.instagram.com/imshubhadeep394/" style="text-decoration: none"
+                        target="_blank"><span>Instagram</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-github"></i></div>
+                    <a href="https://github.com/shubhadeepmandal394" style="text-decoration: none"
+                        target="_blank"><span>Github</span></a>
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <i class="fab fa-linkedin"></i></div>
+                    <a href="https://www.linkedin.com/in/shubhadeepmandal394/" style="text-decoration: none"
+                        target="_blank"><span>LinkedIn</span></a>
+                </div>
+            </div>
         </div>
     </header>
     <!-- About -->
@@ -139,11 +170,30 @@
                 <div class="experience">
                     <div class="education row">
                         <div class="col-md-4">
+                            <h4>Spotlight (Internship)</h4>
+                            <p class="education-period">October 2020 - Present</p>
+                        </div>
+                        <div class="col-md-8">
+                            <strong>Software Tester at Spotlight</strong>
+                            <div><span class="hidden-phone">Spotlight is the world's first audit firm that leverages AI
+                                    to help businesses across the world identify, and reduce, currency conversion costs
+                                    levied by their payment providers.</span>
+                            </div>
+                            <p><span class="education-details">In this internship, I am helping Spotlight in Testing and
+                                    Securing their Web applications.</span>
+                            </p>
+                        </div>
+                        <div class="col-md-10">
+                            <p><i style='font-size:15px' class='fas'>&#xf3c5;</i> Work from Home</p>
+                        </div>
+                    </div>
+                    <div class="education row">
+                        <div class="col-md-4">
                             <h4>Udaan.com (Internship)</h4>
                             <p class="education-period">June 2019 - July 2019</p>
                         </div>
                         <div class="col-md-8">
-                            <strong>Relationship Manager at Udaan.com.</strong>
+                            <strong>Relationship Manager at Udaan.com</strong>
                             <div><span class="hidden-phone">UDAAN is a network-centric B2B trade platform, designed
                                     specifically for small and medium businesses in India. It brings traders,
                                     wholesalers, retailers, and manufacturers in India on to a single platform.</span>
@@ -669,13 +719,32 @@
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Contact Me</h2>
                 <hr>
-            </div>
-            <div class="text-center">
-                <a class="btn btn-facebook-messenger btn-social mx-2" href="https://m.me/shubhadeepmandal394"
-                    target="_blank"><i class="fab fa-facebook-messenger"></i></a><a
-                    class="btn btn-skype btn-social mx-2" href="https://join.skype.com/invite/j9tud1dREYHs"
-                    target="_blank"><i class="fab fa-skype"></i></a><a class="btn btn-whatsapp btn-social mx-2"
-                    href="https://wa.me/919477451976" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+                <div class="iconwrapper ">
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://discord.gg/msJGJ9q" target="_blank"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://join.skype.com/invite/j9tud1dREYHs" target="_blank"><i
+                                    class="fab fa-skype"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://t.me/shubhadeepmandal394" style="text-decoration: none" target="_blank"><i
+                                    class="fab fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="icon">
+                            <a href="https://wa.me/919477451976" style="text-decoration: none" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr>
             <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" id="contactForm">
@@ -739,7 +808,8 @@
                                 <h2 class="text-uppercase">Remote Temperature Monitoring</h2>
                                 <p class="item-intro text-muted">Sending an alert on Telegram when temperature crosses a
                                     certain threshold</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/circuit.jpg" alt="" />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/projects/circuit.jpg" width="560"
+                                    height="315" alt="" />
                                 <p>It remotely allows you to track the Temperature of any particular
                                     location/place/object and sends you an alert message over Telegram as soon as
                                     temperature crosses a certain threshold.</p>
