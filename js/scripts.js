@@ -47,7 +47,7 @@
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
-var _CONTENT = ["Shubhadeep Mandal", "a developer", "a programmer", "an ethical hacker"];
+var _CONTENT = ["Shubhadeep Mandal", "a developer", "a programmer", "a freelancer"];
 var _PART = 0;
 var _PART_INDEX = 0;
 var _INTERVAL_VAL;
